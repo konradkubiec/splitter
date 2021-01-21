@@ -13,7 +13,11 @@ split([1, 2, 3, 4, 5], 3);
 `src/split.ts` - implemented in TypeScript
 
 ## Source code for solution
-`tests/split.test.ts` - implemented in TypeScript
+`tests/split.test.ts` - mocha tests in TypeScript; 
+
+-------------
+
+# Running the solution
 
 ## Instalation
 `npm i`
@@ -24,6 +28,12 @@ split([1, 2, 3, 4, 5], 3);
 ## Test Coverage
 `npm run coverage`
 
+-------------
 
-## TODO
-- publish to npm
+## Extra: Building npm production-ready modules
+If you wish to get JS code from TypeScript one run
+this command: `npm run prepublish`
+
+It will generate `lib` directory:
+- `split.js` with modern JS code
+- `cjs/split.js` with wide support for older JS engines
