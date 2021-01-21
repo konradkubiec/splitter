@@ -10,4 +10,22 @@ describe('split', () => {
         const result = split(testArray, testLength);
         expect(result).to.be.an('array');
     });
+
+    it('splits [ 1, 2, 3, 4, 5] N=2 to [[1, 2], [3, 4], [5]]', () => {
+        const result = split(testArray, testLength);
+        expect(result).to.eql(testOutput);
+    });
+
+    it('splits [1, 2, 3, 4] N=2 to [[1, 2], [3, 4]]', () => {
+        const result = split([1, 2, 3, 4], testLength);
+        expect(result).to.eql([
+            [1, 2],
+            [3, 4],
+        ]);
+    });
+
+    it('splits [1, 2, 3, 4] N=5 to [[1, 2, 3, 4]]', () => {
+        const result = split([1, 2, 3, 4], 5);
+        expect(result).to.eql([[1, 2, 3, 4]]);
+    });
 });
