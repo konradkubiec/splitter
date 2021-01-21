@@ -9,13 +9,21 @@ split([1, 2, 3, 4, 5], 3);
 // [ [ 1, 2 ], [ 3, 4 ], [ 5 ] ]
 ```
 
-Implemented in TypeScript
+## Source code for solution
+`src/split.ts` - implemented in TypeScript
+
+## Source code for solution
+`tests/split.test.ts` - implemented in TypeScript
 
 ## Instalation
-npm i
+`npm i`
 
 ## Testing
-npm t
+`npm t`
+
+## Test Coverage
+`npm run coverage`
+
 
 ## TODO
 - publish to npm
