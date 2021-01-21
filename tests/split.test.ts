@@ -28,4 +28,9 @@ describe('split', () => {
         const result = split([1, 2, 3, 4], 5);
         expect(result).to.eql([[1, 2, 3, 4]]);
     });
+
+    it('splits [] N=5 to []', () => {
+        const result = split([], 5);
+        expect(result).to.eql([]);
+    });
 });
